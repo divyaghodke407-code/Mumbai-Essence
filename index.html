@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mumbai Essence</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <!-- Logo + Project Name -->
+            <a href="#" class="brand">
+
+                <img src="img/logo.png">
+
+                <span><i>Mumbai Essence</i></span>
+
+            </a>
+
+
+            <!-- Desktop Menu -->
+            <nav class="desktop-menu">
+
+                <a href="#home">Home</a>
+                <a href="#restaurants">Restaurants</a>
+                <a href="#places">Places</a>
+                <a href="#contact">Contact</a>
+
+            </nav>
+
+
+            <!-- Hamburger Button -->
+            <button class="menu-btn" id="menuBtn" aria-label="Open Menu">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+
+        <!-- Mobile Menu -->
+        <nav class="mobile-menu" id="mobileMenu">
+
+            <a href="#home">Home</a>
+
+            <a href="#restaurants">Restaurants</a>
+
+            <a href="#places">Places</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+    </header>
+
+<!-- ================= RESTAURANTS ================= -->
+
+<section class="restaurants-section" id="restaurants">
+
+    <div class="section-heading">
+        <span>EXPLORE MUMBAI</span>
+        <h2>Featured Restaurants</h2>
+        <p>
+            Discover Mumbai's finest dining experiences
+        </p>
+    </div>
+
+
+    <!-- Restaurant Slider -->
+
+    <div class="restaurant-slider">
+
+        <!-- Slide 1 -->
+
+        <div class="restaurant-slide active">
+
+            <div class="restaurant-image">
+
+                <img src="img/jamavar r.jpg"
+                     alt="Jamavar Restaurant">
+
+                <div class="image-overlay"></div>
+
+            </div>
+
+
+            <div class="restaurant-info">
+
+                <span class="restaurant-tag">
+                    INDIAN FINE DINING
+                </span>
+
+                <h3>Jamavar</h3>
+
+                <p class="location">
+                    📍 Andheri East, Mumbai
+                </p>
+
+                <p class="description">
+                    Experience luxurious Indian dining with
+                    elegant interiors, traditional flavours
+                    and a premium royal ambience.
+                </p>
+
+                <div class="restaurant-details">
+
+                    <span>⭐ 4.8</span>
+
+                    <span>📞 +91 22 6691 1350</span>
+
+                </div>
+
+                <button class="view-btn"
+                        onclick="showDetails(0)">
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Slide 2 -->
+
+        <div class="restaurant-slide">
+
+            <div class="restaurant-image">
+
+                <img src="img/the-table-.jpg"
+                     alt="The Table Restaurant">
+
+                <div class="image-overlay"></div>
+
+
+            </div>
+
+
+            <div class="restaurant-info">
+
+                <span class="restaurant-tag">
+                    MODERN LUXURY
+                </span>
+
+                <h3>The Table</h3>
+
+                <p class="location">
+                    📍 Colaba, Mumbai
+                </p>
+
+                <p class="description">
+                    A stylish luxury dining destination known
+                    for its sophisticated ambience and global
+                    culinary experience.
+                </p>
+
+                <div class="restaurant-details">
+
+                    <span>⭐ 4.7</span>
+
+                    <span>📞 +91 70451 11880</span>
+
+                </div>
+
+                <button class="view-btn"
+                        onclick="showDetails(1)">
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Slide 3 -->
+
+        <div class="restaurant-slide">
+
+            <div class="restaurant-image">
+
+                <img src="img/by the.avif"
+                     alt="By The Mekong">
+
+                <div class="image-overlay"></div>
+
+
+            </div>
+
+
+            <div class="restaurant-info">
+
+                <span class="restaurant-tag">
+                    SKYLINE DINING
+                </span>
+
+                <h3>By The Mekong</h3>
+
+                <p class="location">
+                    📍 St. Regis, Lower Parel
+                </p>
+
+                <p class="description">
+                    Enjoy Chinese, Thai and Vietnamese flavours
+                    from Level 37 with spectacular Mumbai skyline
+                    and Arabian Sea views.
+                </p>
+
+                <div class="restaurant-details">
+
+                    <span>⭐ 4.6</span>
+
+                    <span>📞 +91 22 6162 8070</span>
+
+                </div>
+
+                <button class="view-btn"
+                        onclick="showDetails(2)">
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Slide 4 -->
+
+        <div class="restaurant-slide">
+
+            <div class="restaurant-image">
+
+                <img src="img/ziya.jpg"
+                     alt="Ziya Restaurant">
+
+                <div class="image-overlay"></div>
+
+
+            </div>
+
+
+            <div class="restaurant-info">
+
+                <span class="restaurant-tag">
+                    MODERN INDIAN
+                </span>
+
+                <h3>Ziya</h3>
+
+                <p class="location">
+                    📍 The Oberoi, Nariman Point
+                </p>
+
+                <p class="description">
+                    Discover modern Indian cuisine with elegant
+                    interiors, ocean views and an unforgettable
+                    fine-dining experience.
+                </p>
+
+                <div class="restaurant-details">
+
+                    <span>⭐ 4.6</span>
+
+                    <span>📞 +91 22 6632 6210</span>
+
+                </div>
+
+                <button class="view-btn"
+                        onclick="showDetails(3)">
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Slide 5 -->
+
+        <div class="restaurant-slide">
+
+            <div class="restaurant-image">
+
+                <img src="img/gallops.jpg"
+                     alt="Gallops Restaurant">
+
+                <div class="image-overlay"></div>
+
+
+            </div>
+
+
+            <div class="restaurant-info">
+
+                <span class="restaurant-tag">
+                    CLASSIC AMBIENCE
+                </span>
+
+                <h3>Gallops</h3>
+
+                <p class="location">
+                    📍 Mahalaxmi Racecourse
+                </p>
+
+                <p class="description">
+                    A spacious and classy dining destination
+                    surrounded by greenery, offering Indian
+                    and Continental cuisine.
+                </p>
+
+                <div class="restaurant-details">
+
+                    <span>⭐ 4.2</span>
+
+                    <span>📞 +91 22 6960 0111</span>
+
+                </div>
+
+                <button class="view-btn"
+                        onclick="showDetails(4)">
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Slider Dots -->
+
+    <div class="slider-dots">
+
+        <button class="dot active"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+
+    </div>
+
+</section>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
