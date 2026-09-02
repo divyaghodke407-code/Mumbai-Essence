@@ -1,27 +1,18 @@
-/* =========================
-   RESET
-========================= */
-
+/*RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background: #fffdf8;
     color: #111;
 }
-
-
-/* =========================
-   NAVBAR
-========================= */
+/*  NAVBAR */
 
 .navbar {
     width: 100%;
@@ -29,730 +20,427 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
 }
-
-
 /* Main container */
-
 .nav-container {
     width: 100%;
     max-width: 1400px;
     min-height: 95px;
-
     margin: auto;
     padding: 10px 35px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-
-/* =========================
-   BRAND
-========================= */
-
+/* BRAND*/
 .brand {
     display: flex;
     align-items: center;
     gap: 18px;
-
     text-decoration: none;
     color: #534eb4;
 }
-
-
 /* Logo */
-
 .brand img {
     width: 70px;
     height: 70px;
-
     object-fit: contain;
 }
 
-
 /* Project name */
-
 .brand span {
     font-size: 30px;
     font-weight: 700;
     letter-spacing: -1px;
 }
-
-
-/* =========================
-   DESKTOP MENU
-========================= */
-
+/* DESKTOP MENU */
 .desktop-menu {
     display: flex;
     align-items: center;
     gap: 35px;
 }
-
 .desktop-menu a {
     text-decoration: none;
     color: #222;
-
     font-size: 18px;
     font-weight: 500;
-
     transition: 0.3s;
 }
-
 .desktop-menu a:hover {
-    color: #534eb4;
-    
+    color: #534eb4; 
 }
-
-
-/* =========================
-   HAMBURGER
-========================= */
-
+/* HAMBURGER*/
 .menu-btn {
     width: 55px;
     height: 55px;
-
     border: 3px solid #555;
     border-radius: 14px;
-
     background: transparent;
-
     display: none;
-
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     gap: 7px;
-
     cursor: pointer;
 }
-
-
 /* Hamburger lines */
-
 .menu-btn span {
     width: 27px;
     height: 3px;
     background: #534eb4;
-
     border-radius: 10px;
-
     transition: 0.3s;
 }
-
-
-/* =========================
-   MOBILE MENU
-========================= */
-
+/* MOBILE MENU*/
 .mobile-menu {
     display: none;
-
     width: 100%;
-
     padding: 15px 30px 30px;
-
     background: #fffdf8;
 }
-
 .mobile-menu a {
     display: block;
-
     padding: 18px 0;
-
     text-decoration: none;
-
     color: #111;
-
     font-size: 24px;
     font-weight: 500;
-
     border-bottom: 1px solid #eee;
 }
-
-/* =================================================
-   TABLET
-================================================= */
-
+/*TABLET */
 @media (max-width: 900px) {
-
     .nav-container {
         min-height: 90px;
         padding: 10px 25px;
     }
-
     .brand span {
         font-size: 34px;
     }
-
     .brand img {
         width: 65px;
         height: 65px;
     }
-
     .desktop-menu {
         display: none;
     }
-
     .menu-btn {
         display: flex;
     }
-
 }
-
-
-/* =================================================
-   MOBILE
-================================================= */
-
+/* MOBILE*/
 @media (max-width: 600px) {
-
     .nav-container {
         min-height: 82px;
-
         padding: 8px 18px;
     }
-
-
     /* Logo */
-
     .brand {
         gap: 10px;
     }
-
     .brand img {
         width: 58px;
         height: 58px;
     }
-
-
     /* Mumbai Essence */
-
     .brand span {
         font-size: 25px;
         letter-spacing: -0.5px;
     }
-
-
     /* Hamburger */
-
     .menu-btn {
         width: 50px;
         height: 50px;
-
         border-radius: 12px;
-
         gap: 6px;
     }
-
     .menu-btn span {
         width: 25px;
         height: 3px;
     }
-
-
     /* Mobile menu */
-
     .mobile-menu {
         padding: 10px 25px 25px;
     }
-
     .mobile-menu a {
         font-size: 23px;
         padding: 17px 5px;
     }
-
-
     /* Hero */
-
     .hero {
         min-height: 450px;
         padding: 60px 20px;
     }
-
     .hero h1 {
         font-size: 34px;
     }
-
     .hero p {
         font-size: 18px;
         line-height: 1.6;
     }
-
-
     /* Sections */
-
     .section {
         padding: 60px 20px;
     }
-
     .section h2 {
         font-size: 30px;
     }
-
 }
-
-
-/* =================================================
-   SMALL MOBILE
-================================================= */
-
+/* SMALL MOBILE*/
 @media (max-width: 380px) {
-
     .brand span {
         font-size: 21px;
     }
-
     .brand img {
         width: 52px;
         height: 52px;
     }
-
     .menu-btn {
         width: 46px;
         height: 46px;
     }
-
 }
-/* ==========================================
-   RESTAURANT SECTION
-========================================== */
-
+/*   RESTAURANT SECTION*/
 .restaurants-section {
     padding: 90px 6%;
     background: #fffdf8;
 }
-
-
 /* Heading */
-
 .section-heading {
     text-align: center;
     margin-bottom: 45px;
 }
-
 .section-heading span {
     color: #d39b35;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 3px;
 }
-
 .section-heading h2 {
     margin: 10px 0;
-
     font-size: 42px;
     color: #172c55;
 }
-
 .section-heading p {
     color: #777;
     font-size: 17px;
 }
-
-
-/* ==========================================
-   SLIDER
-========================================== */
-
+/* SLIDER */
 .restaurant-slider {
     width: 100%;
     max-width: 1200px;
-
     margin: auto;
-
     position: relative;
 }
-
-
 /* Slide */
-
 .restaurant-slide {
     display: none;
-
     grid-template-columns: 1.15fr 0.85fr;
-
     background: white;
-
     border-radius: 28px;
-
     overflow: hidden;
-
-    box-shadow:
-        0 15px 45px rgba(0, 0, 0, 0.12);
-
+    box-shadow:0 15px 45px rgba(0, 0, 0, 0.12);
     min-height: 480px;
-
     animation: slideIn 0.7s ease;
 }
-
-
 /* Active slide */
-
 .restaurant-slide.active {
     display: grid;
 }
-
-
 /* Animation */
-
 @keyframes slideIn {
-
     from {
         opacity: 0;
         transform: translateX(35px);
     }
-
     to {
         opacity: 1;
         transform: translateX(0);
     }
-
 }
-
-
-/* ==========================================
-   IMAGE
-========================================== */
-
+/*  IMAGE*/
 .restaurant-image {
     position: relative;
-
     min-height: 480px;
-
     overflow: hidden;
 }
-
 .restaurant-image img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
     display: block;
-
     transition: transform 0.8s ease;
 }
-
 .restaurant-slide:hover .restaurant-image img {
     transform: scale(1.05);
 }
-
-
 /* Image overlay */
-
 .image-overlay {
     position: absolute;
-
     inset: 0;
-
     background:
-        linear-gradient(
-            to top,
-            rgba(0,0,0,0.55),
-            transparent 55%
-        );
+     linear-gradient( to top, rgba(0,0,0,0.55), transparent 55%);
 }
-
-
 /* Number */
-
 .restaurant-number {
     position: absolute;
-
     bottom: 25px;
     left: 30px;
-
     color: white;
-
     font-size: 14px;
-
     letter-spacing: 2px;
-
     font-weight: 600;
 }
 
-
-/* ==========================================
-   INFORMATION
-========================================== */
-
+/* INFORMATION */
 .restaurant-info {
     padding: 55px 45px;
-
     display: flex;
     flex-direction: column;
-
     justify-content: center;
 }
-
-
 .restaurant-tag {
     color: #c4912e;
-
     font-size: 13px;
-
     font-weight: 700;
-
     letter-spacing: 2px;
-
     margin-bottom: 12px;
 }
-
-
 .restaurant-info h3 {
     color: #172c55;
-
     font-size: 42px;
-
     margin-bottom: 10px;
 }
-
-
 .location {
     color: #555;
-
     font-size: 16px;
-
     margin-bottom: 22px;
 }
-
-
 .description {
     color: #666;
-
     font-size: 16px;
-
     line-height: 1.7;
-
     margin-bottom: 25px;
 }
-
-
 /* Details */
-
 .restaurant-details {
     display: flex;
-
     flex-direction: column;
-
     gap: 12px;
-
     color: #333;
-
     font-size: 15px;
-
     margin-bottom: 30px;
 }
-
-
-/* ==========================================
-   VIEW BUTTON
-========================================== */
-
+/* VIEW BUTTON*/
 .view-btn {
     width: fit-content;
-
     padding: 13px 28px;
-
     border: none;
-
     border-radius: 30px;
-
     background: #172c55;
-
     color: white;
-
     font-size: 15px;
-
     font-weight: 600;
-
     cursor: pointer;
-
     transition: 0.3s;
 }
-
-
 .view-btn:hover {
     background: #d39b35;
-
     transform: translateY(-2px);
 }
-
-
-/* ==========================================
-   DOTS
-========================================== */
-
+/*DOTS*/
 .slider-dots {
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     gap: 10px;
-
     margin-top: 30px;
 }
-
-
 .dot {
     width: 9px;
     height: 9px;
-
     padding: 0;
-
     border: none;
-
     border-radius: 50%;
-
     background: #ccc;
-
     cursor: pointer;
-
     transition: 0.3s;
 }
-
-
 .dot.active {
     width: 28px;
-
     border-radius: 20px;
-
     background: #172c55;
 }
-
-
-/* ==========================================
-   TABLET
-========================================== */
-
+/*TABLET */
 @media (max-width: 900px) {
-
     .restaurants-section {
         padding: 70px 25px;
     }
-
     .restaurant-slide {
         grid-template-columns: 1fr;
-
         min-height: auto;
     }
-
     .restaurant-image {
         height: 400px;
-
         min-height: 400px;
     }
-
     .restaurant-info {
         padding: 40px;
     }
-
 }
-
-
-/* ==========================================
-   MOBILE
-========================================== */
-
+/* MOBILE */
 @media (max-width: 600px) {
-
-    .restaurants-section {
+  .restaurants-section {
         padding: 55px 18px;
     }
-
-
-    .section-heading {
+  .section-heading {
         margin-bottom: 30px;
     }
-
-
-    .section-heading span {
+  .section-heading span {
         font-size: 11px;
-
         letter-spacing: 2px;
     }
-
-
-    .section-heading h2 {
+  .section-heading h2 {
         font-size: 30px;
     }
-
-
-    .section-heading p {
+   .section-heading p {
         font-size: 14px;
-
         line-height: 1.5;
     }
-
-
-    .restaurant-slide {
+  .restaurant-slide {
         border-radius: 20px;
     }
-
-
-    .restaurant-image {
+   .restaurant-image {
         height: 280px;
-
         min-height: 280px;
     }
-
-
-    .restaurant-number {
+  .restaurant-number {
         bottom: 18px;
-
         left: 20px;
-
         font-size: 12px;
     }
-
-
-    .restaurant-info {
+  .restaurant-info {
         padding: 30px 24px;
     }
-
-
-    .restaurant-tag {
+  .restaurant-tag {
         font-size: 11px;
-
         letter-spacing: 1.5px;
     }
-
-
-    .restaurant-info h3 {
+   .restaurant-info h3 {
         font-size: 31px;
     }
-
-
-    .location {
+  .location {
         font-size: 14px;
     }
-
-
-    .description {
+  .description {
         font-size: 14px;
-
         line-height: 1.6;
     }
-
-
-    .restaurant-details {
+  .restaurant-details {
         font-size: 14px;
     }
-
-
-    .view-btn {
+   .view-btn {
         width: 100%;
-
         padding: 13px;
     }
-
 }
