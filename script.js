@@ -1,7 +1,5 @@
 const menuBtn = document.getElementById("menuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
-
-
 // Open / Close menu
 menuBtn.addEventListener("click", function () {
 
@@ -16,8 +14,6 @@ menuBtn.addEventListener("click", function () {
     }
 
 });
-
-
 // Close menu when clicking a link
 
 const menuLinks = document.querySelectorAll(".mobile-menu a");
@@ -31,9 +27,7 @@ menuLinks.forEach(function (link) {
     });
 
 });
-/* ==========================================
-   RESTAURANT AUTO SLIDER
-========================================== */
+/*RESTAURANT AUTO SLIDER*/
 
 const restaurantSlides =
     document.querySelectorAll(".restaurant-slide");
@@ -93,9 +87,7 @@ restaurantDots.forEach(function(dot, index) {
 });
 
 
-/* ==========================================
-   VIEW DETAILS
-========================================== */
+/*VIEW DETAILS*/
 
 function showDetails(index) {
 
@@ -112,5 +104,104 @@ function showDetails(index) {
         restaurantNames[index] +
         "!\n\nMore details will be available soon."
     );
+
+}
+/*  SPECIAL OFFERS*/
+/* CARD CLICK*/
+
+function selectOffer(card) {
+
+    // Remove selected from all cards
+
+    const allCards =
+        document.querySelectorAll(".offer-card");
+
+    allCards.forEach(function(item) {
+
+        if (item !== card) {
+
+            item.classList.remove("selected");
+
+            const phone =
+                item.querySelector(".phone-box");
+
+            if (phone) {
+                phone.innerHTML = "";
+            }
+
+        }
+
+    });
+
+    // Toggle current card
+
+    if (card.classList.contains("selected")) {
+
+        card.classList.remove("selected");
+
+    } else {
+
+        card.classList.add("selected");
+
+    }
+
+}
+/* LEARN MORE*/
+
+function showPhone(event, button, restaurant, phone) {
+
+    // Stop card click from running twice
+
+    event.stopPropagation();
+
+
+    // Get card
+
+    const card =
+        button.closest(".offer-card");
+
+
+    // Get phone box
+
+    const phoneBox =
+        card.querySelector(".phone-box");
+
+
+    // Make this card selected
+
+    document
+        .querySelectorAll(".offer-card")
+        .forEach(function(item) {
+
+            if (item !== card) {
+
+                item.classList.remove("selected");
+
+                const oldPhone =
+                    item.querySelector(".phone-box");
+
+                if (oldPhone) {
+                    oldPhone.innerHTML = "";
+                }
+
+            }
+
+        });
+
+
+    card.classList.add("selected");
+    // If phone already visible → hide it
+
+    if (phoneBox.innerHTML !== "") {
+
+        phoneBox.innerHTML = "";
+
+        return;
+    }
+    phoneBox.innerHTML = `
+        <a href="tel:${phone}">
+            📞 ${phone}
+        </a>
+    `;
 
 }
